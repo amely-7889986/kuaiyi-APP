@@ -35,11 +35,14 @@ p{
 .mui-content{
     background-color: #f0efef;
 }
-.bg-lan{
-    background-color: #063062;
+.bg-cheng{
+    background-color: #fb5a02;
 }
 .bg-bai{
     background-color: #fff !important;
+}
+.bg-lblue{
+    background-color: #e6f2fd;
 }
 /*字体图标*/
 @font-face {font-family: 'iconfont';
@@ -211,6 +214,7 @@ color: #063062;
 #mui-menu-box{
     box-shadow: none;
     background: #fff;
+    border-top: 1px solid #ddd;
 }
 #mui-menu-box .mui-menu-item{
     display: table-cell;
@@ -368,6 +372,9 @@ color: #063062;
     height: 2.4em;
     line-height: 2.4em;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .mui-assetscroll-box span.tag{
     display: block;
@@ -393,7 +400,183 @@ color: #063062;
     overflow: hidden;
     line-height: 1.4em;
 }
+.mui-news-list{
+    display: block;
+    overflow: hidden;
+    padding: 8px 2%;
+}
+.mui-news-list .info{
+    width: 60%;
+    margin-right: 2%;
+    line-height: 1.8em;
+}
+.mui-news-list .info .tit{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.mui-news-list .pic{
+    display: block;
+    width: 38%;
+    overflow: hidden;
+}
+.mui-news-list .pic >img{
+    width: 100%;
+    vertical-align: top;
+}
+.mui-news-list .fullinfo{
+    width: 100%;
+    line-height: 1.8em;
+}
+.mui-news-list .fullinfo .tit{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.mui-news-line{
+    display: block;
+    overflow: hidden;
+    height: 1px;
+    background: #ddd;
+    margin: 0 1%;
+}
+.mui-news-more{
+    display: block;
+    line-height: 2.4em;
+    font-size: .6em;
+    color: #0781e9;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+.mui-coupon{
+    display: block;
+    margin: 8px 2%;
+    overflow: hidden;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+}
+.mui-coupon >img{
+    width: 100%;
+    vertical-align: top;
+}
+.mui-helpmenu{
+    display: block;
+    height: 3.4em;
+    line-height: 2.4em;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.mui-helpmenu li{
+    display: block;
+    width: 33.33%;
+    text-align: center;
+    float: left;
+}
+.mui-helpmenu li >a{
+    display: inline-block;
+    width: 100%;
+    height: 2.4em;
+    margin-top: .5em;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.mui-helpmenu li >a i{
+    margin-right: 8px;
+}
 
+/* 资产模块 */
+.mui-title-tab >a{
+    border-right: 1px solid #fff;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+.mui-title-tab >a.active,.mui-title-tab >a:active,.mui-title-tab >a:hover{
+    font-weight: bold;
+}
+.mui-asset-scale{
+    display: block;
+    overflow: hidden;
+    padding: 12px 0;
+}
+.mui-asset-scale li{
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.mui-asset-scale li .tit{
+    line-height: 1.8em;
+}
+.mui-asset-scale li .data{
+    line-height: 2em;
+}
+.mui-asset-sum{
+    display: block;
+    overflow: hidden;
+    padding: 12px 2%;
+    border-bottom: 1px solid #ddd;
+}
+.mui-asset-sum li{
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+.mui-asset-sum li .tit{
+    line-height: 1.2em;
+}
+.mui-asset-sum li .data{
+    line-height: 1.4em;
+}
+.mui-asset-sum .mui-asset-sumbox{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+    line-height: 2em;
+    padding-top: 4px;
+}
+.mui-asset-tabbox .mui-scroll-wrapper{
+    position: relative;
+}
+.mui-asset-tabbox .mui-scroll-wrapper .mui-scroll{
+    position: relative;
+}
+.mui-asset-tabbox 
+
+
+/* 投资动态 */
+.mui-page-banner{
+    display: block;
+    overflow: hidden;
+    padding: 8px 2%;
+}
+.mui-page-banner img{
+    width: 100%;
+    vertical-align: top;
+}
+.mui-page-box{
+    padding: 4px 2%;
+}
+.mui-page-box .tit{
+    line-height: 1.4em;
+}
+.mui-page-box .date{
+    margin: 8px 0;
+}
+.mui-page-box .mui-info-detail img{
+    width: 100%;
+}
 
 
 /**
