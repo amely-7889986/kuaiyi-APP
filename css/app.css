@@ -44,6 +44,12 @@ p{
 .bg-lblue{
     background-color: #e6f2fd;
 }
+.bg-hui{
+    background-color: #d1d1d1;
+}
+.bg-blue{
+    background-color: #0781e9;
+}
 /*字体图标*/
 @font-face {font-family: 'iconfont';
     src: url('../fonts/iconfont.eot'); /* IE9*/
@@ -253,6 +259,63 @@ color: #063062;
     background-image: -webkit-gradient(linear, 0 0, 0 50%, from(rgba(251, 90, 2, 1)), to(rgba(251, 90, 2, 1)));
     background-image: radial-gradient(linear, 0 0, 0 50%, from(rgba(251, 90, 2, 1)), to(rgba(251, 90, 2, 1)));
 }
+#mui-menu-box p.moneycount{
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+    float: left;
+    width: 48%;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 4px;
+}
+#mui-menu-box .follow{
+    width: 20%;
+    display: block;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+}
+#mui-menu-box .follow span.mui-icon{
+    padding: 0;
+}
+#mui-menu-box a.mui-buybtn{
+    display: block;
+    overflow: hidden;
+    width: 32%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+#mui-menu-box a:active.mui-buybtn{
+    color: rgba(255, 255, 255, 0.6);
+}
+#mui-menu-box a.mui-buybtn-full{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+#mui-menu-box a:active.mui-buybtn-full{
+    color: rgba(251, 2, 2, 0.4);
+}
+#mui-menu-box a.mui-buybtn-half{
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+#mui-menu-box a:active.mui-buybtn-half{
+    color: rgba(255, 255, 255, 0.6);
+}
+
 /*首页样式*/
 .mui-slider-btn{
     position: absolute;
@@ -446,8 +509,8 @@ color: #063062;
 }
 .mui-news-more{
     display: block;
-    line-height: 2.4em;
-    font-size: .6em;
+    line-height: 2.8em;
+    font-size: .8em;
     color: #0781e9;
     text-align: center;
     border-top: 1px solid #ddd;
@@ -552,8 +615,31 @@ color: #063062;
 .mui-asset-tabbox .mui-scroll-wrapper .mui-scroll{
     position: relative;
 }
-.mui-asset-tabbox 
-
+.info-asset-detail{
+    padding: 4px 2%;
+}
+.mui-asset-tabbox .mui-table-view-cell:after{
+    background-color: #fff !important;
+}
+.mui-asset-tabbox .info-asset-dealist ul.condata{
+    display: block;
+    overflow: hidden;
+}
+.mui-asset-tabbox .info-asset-dealist >li{
+    padding: 8px;
+}
+.mui-asset-tabbox .info-asset-dealist ul.condata li{
+    float: left;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 4px;
+}
+.mui-asset-tabbox .info-asset-dealist .condate{
+    border-top: 1px solid #ddd;
+    color: #000;
+    padding-top: 4px;
+}
 
 /* 投资动态 */
 .mui-page-banner{
